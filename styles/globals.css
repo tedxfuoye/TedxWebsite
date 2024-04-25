@@ -40,3 +40,7 @@ body {
   @apply bg-gray-100;
   font-size: 1.6rem;
 }
+
+.gradient-background {
+  background: linear-gradient(to right, #fde9ec, #faf7f8, #fde6e8);
+}

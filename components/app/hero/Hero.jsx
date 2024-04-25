@@ -1,3 +1,4 @@
+import { simpleSteps } from "@/constants/constants";
 import Image from "next/image";
 import React from "react";
 
@@ -29,6 +30,7 @@ const Hero = () => {
           />
         </div>
       </div>
+
       <div className="-mt-40">
         <Image
           src={"/images/hero2.png"}
@@ -37,6 +39,45 @@ const Hero = () => {
           alt="speaker at a TEDx event"
           className="ml-auto"
         />
+      </div>
+
+      <div className="flex items-center gap-[1.875rem] py-[12rem]">
+        <div className="">
+          <Image
+            src={"/images/simple1.png"}
+            width={300}
+            height={400}
+            alt=""
+            className=""
+          />
+        </div>
+
+        {/* simple steps section */}
+        <div className="w-full">
+          <h2 className="text-black font-bold font-kameron text-4xl mb-6">
+            Simple steps to get started
+          </h2>
+          <div className="px-10 py-14 gradient-background rounded-xl border border-primary/20">
+            <div className="flex items-center justify-between">
+              {simpleSteps.map((i) => (
+                <div key={i.desc} className="max-w-[229px]">
+                  <div className="image w-12 h-12 bg-primary p-2 rounded-full">
+                    <Image
+                      src={i.image}
+                      width={100}
+                      height={100}
+                      alt="happy emoji"
+                      className=""
+                    />
+                  </div>
+                  <p className="text-black mt-2 font-medium text-[16px]">
+                    {i.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
