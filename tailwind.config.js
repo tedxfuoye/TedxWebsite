@@ -7,10 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        kameron: ["Kameron", "serif"],
+      },
+      colors: {
+        primary: "#eb0028",
+        secondary: "#5e5e5e",
+        black: "#0e0e0e",
+        gradient: {
+          "linear-gradient":
+            "linear-gradient(to bottom, #fde9ec, #faf7f8, #fde6e8)",
+        },
       },
     },
   },
