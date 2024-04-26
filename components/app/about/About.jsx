@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="px-20">
+    <section className="px-40">
       <div className="flex items-start justify-between">
         <div className="w-full md:w-1/2">
           <h2 className="text-black font-bold font-kameron text-4xl mb-6">

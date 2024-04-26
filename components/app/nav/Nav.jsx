@@ -12,7 +12,7 @@ const Nav = () => {
 
   return (
     <nav className="bg-white">
-      <div className="h-[7rem] px-20 flex items-center justify-between">
+      <div className="h-[7rem] px-40 flex items-center justify-between">
         <Link href={"/"}>
           <Image
             src={"/images/tedxLogo.png"}

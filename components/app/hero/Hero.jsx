@@ -4,8 +4,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="px-20 py-40">
-      <div className="flex items-start gap-[2rem] justify-between">
+    <section className="px-40 py-40">
+      <div className="flex items-start gap-[1rem] justify-between">
         <div className="w-full md:w-2/3">
           <h1 className="text-6xl font-kameron font-bold leading-[5rem] w-full md:max-w-5xl ">
             Welcome to <span className="text-primary">TEDx</span>FUOYE! Explore
@@ -20,10 +20,10 @@ const Hero = () => {
             time.
           </p>
         </div>
-        <div className="w-full md:w-1/3">
+        <div className="w-full md:w-[330px]">
           <Image
             src={"/images/hero1.png"}
-            width={349}
+            width={330}
             height={100}
             alt="speaker at a TEDx event"
             className="ml-auto"
@@ -34,14 +34,14 @@ const Hero = () => {
       <div className="-mt-40">
         <Image
           src={"/images/hero2.png"}
-          width={1247}
+          width={1200}
           height={100}
           alt="speaker at a TEDx event"
           className="ml-auto"
         />
       </div>
 
-      <div className="flex items-center gap-[1.875rem] py-[12rem]">
+      <div className="flex items-end gap-[1.875rem] py-[12rem]">
         <div className="">
           <Image
             src={"/images/simple1.png"}
