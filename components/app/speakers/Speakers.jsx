@@ -1,22 +1,31 @@
 "use client";
 
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
+import { useRef } from "react";
 import Image from "next/image";
 
-const Speakers = () => {
-  const [sliderRef] = useKeenSlider({
-    slides: {
-      perView: 6,
-      spacing: 15,
-    },
-    loop: true,
-    defaultAnimation: {
-      duration: 5000,
-    },
-  });
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { speakersList } from "@/constants/constants";
 
- 
+const Speakers = () => {
+  let sliderRef = useRef(null);
+
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
+  };
+
+  const sliderSettings = {
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: false,
+  };
 
   return (
     <section className="px-40 py-40">
@@ -24,154 +33,46 @@ const Speakers = () => {
         Meet our lineup of amazing speakers
       </h2>
 
-      <div ref={sliderRef} className="keen-slider">
-        <div className="keen-slider__slide">
-          <div className="relative w-[15.625rem] h-[18.75rem] rounded-xl overflow-hidden">
+      <Slider
+        ref={(slider) => {
+          sliderRef = slider;
+        }}
+        {...sliderSettings}
+      >
+        {speakersList.map((speaker) => (
+          <div className="relative rounded-xl max-w-[250px]overflow-hidden">
             <Image
-              src={"/images/laughter.png"}
+              src={speaker.image}
               width={250}
               height={300}
-              alt="laughter"
-              className=""
+              alt={speaker.name}
             />
             <div className="absolute bottom-0 left-0 h-[4.5rem] w-full bg-white/50 backdrop-blur-sm px-3 py-3 ">
               <div className="text-center">
                 <h5 className="font-bold text-[1.2rem] text-white">
-                  Laughter Atanda
+                  {speaker.name}
                 </h5>
-                <p className="font-medium text-xs text-white">
-                  Co-organizer, Head of Operations
-                </p>
+                <p className="font-medium text-xs text-white">{speaker.bio}</p>
               </div>
             </div>
           </div>
-        </div>
-        <div className="keen-slider__slide">
-          <div className="relative w-[15.625rem] h-[18.75rem] rounded-xl overflow-hidden">
-            <Image
-              src={"/images/laughter.png"}
-              width={250}
-              height={300}
-              alt="laughter"
-              className=""
-            />
-            <div className="absolute bottom-0 left-0 h-[4.5rem] w-full bg-white/50 backdrop-blur-sm px-3 py-3 ">
-              <div className="text-center">
-                <h5 className="font-bold text-[1.2rem] text-white">
-                  Laughter Atanda
-                </h5>
-                <p className="font-medium text-xs text-white">
-                  Co-organizer, Head of Operations
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="keen-slider__slide">
-          <div className="relative w-[15.625rem] h-[18.75rem] rounded-xl overflow-hidden">
-            <Image
-              src={"/images/laughter.png"}
-              width={250}
-              height={300}
-              alt="laughter"
-              className=""
-            />
-            <div className="absolute bottom-0 left-0 h-[4.5rem] w-full bg-white/50 backdrop-blur-sm px-3 py-3 ">
-              <div className="text-center">
-                <h5 className="font-bold text-[1.2rem] text-white">
-                  Laughter Atanda
-                </h5>
-                <p className="font-medium text-xs text-white">
-                  Co-organizer, Head of Operations
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="keen-slider__slide">
-          <div className="relative w-[15.625rem] h-[18.75rem] rounded-xl overflow-hidden">
-            <Image
-              src={"/images/laughter.png"}
-              width={250}
-              height={300}
-              alt="laughter"
-              className=""
-            />
-            <div className="absolute bottom-0 left-0 h-[4.5rem] w-full bg-white/50 backdrop-blur-sm px-3 py-3 ">
-              <div className="text-center">
-                <h5 className="font-bold text-[1.2rem] text-white">
-                  Laughter Atanda
-                </h5>
-                <p className="font-medium text-xs text-white">
-                  Co-organizer, Head of Operations
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="keen-slider__slide">
-          <div className="relative w-[15.625rem] h-[18.75rem] rounded-xl overflow-hidden">
-            <Image
-              src={"/images/laughter.png"}
-              width={250}
-              height={300}
-              alt="laughter"
-              className=""
-            />
-            <div className="absolute bottom-0 left-0 h-[4.5rem] w-full bg-white/50 backdrop-blur-sm px-3 py-3 ">
-              <div className="text-center">
-                <h5 className="font-bold text-[1.2rem] text-white">
-                  Laughter Atanda
-                </h5>
-                <p className="font-medium text-xs text-white">
-                  Co-organizer, Head of Operations
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="keen-slider__slide">
-          <div className="relative w-[15.625rem] h-[18.75rem] rounded-xl overflow-hidden">
-            <Image
-              src={"/images/laughter.png"}
-              width={250}
-              height={300}
-              alt="laughter"
-              className=""
-            />
-            <div className="absolute bottom-0 left-0 h-[4.5rem] w-full bg-white/50 backdrop-blur-sm px-3 py-3 ">
-              <div className="text-center">
-                <h5 className="font-bold text-[1.2rem] text-white">
-                  Laughter Atanda
-                </h5>
-                <p className="font-medium text-xs text-white">
-                  Co-organizer, Head of Operations
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="keen-slider__slide">
-          <div className="relative w-[15.625rem] h-[18.75rem] rounded-xl overflow-hidden">
-            <Image
-              src={"/images/laughter.png"}
-              width={250}
-              height={300}
-              alt="laughter"
-              className=""
-            />
-            <div className="absolute bottom-0 left-0 h-[4.5rem] w-full bg-white/50 backdrop-blur-sm px-3 py-3 ">
-              <div className="text-center">
-                <h5 className="font-bold text-[1.2rem] text-white">
-                  Laughter Atanda
-                </h5>
-                <p className="font-medium text-xs text-white">
-                  Co-organizer, Head of Operations
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
+      </Slider>
+
+      {/* custom arrow / scroll button */}
+      <div className="flex justify-center mt-10">
+        <button
+          className="mx-2 flex items-center justify-center text-base my-5 border border-primary/60 rounded-md text-primary w-14 h-11 "
+          onClick={previous}
+        >
+          <MdChevronLeft className="text-[1.5rem]" />
+        </button>
+        <button
+          className="mx-2 flex items-center justify-center text-base my-5 border border-primary/60 rounded-md text-primary w-14 h-11 "
+          onClick={next}
+        >
+          <MdChevronRight className="text-[1.5rem]" />
+        </button>
       </div>
     </section>
   );

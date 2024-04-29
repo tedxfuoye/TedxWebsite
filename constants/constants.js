@@ -35,3 +35,36 @@ export const simpleSteps = [
     desc: "Grab your tickets now and be part of the TEDxFUOYE experience.",
   },
 ];
+
+export const speakersList = [
+  {
+    name: "Laughter Atanda",
+    bio: "Co-organizer, Head of Operations",
+    image: "/images/laughter.png",
+  },
+  {
+    name: "Laughter Atanda",
+    bio: "Co-organizer, Head of Operations",
+    image: "/images/laughter.png",
+  },
+  {
+    name: "Laughter Atanda",
+    bio: "Co-organizer, Head of Operations",
+    image: "/images/laughter.png",
+  },
+  {
+    name: "Laughter Atanda",
+    bio: "Co-organizer, Head of Operations",
+    image: "/images/laughter.png",
+  },
+  {
+    name: "Laughter Atanda",
+    bio: "Co-organizer, Head of Operations",
+    image: "/images/laughter.png",
+  },
+  {
+    name: "Laughter Atanda",
+    bio: "Co-organizer, Head of Operations",
+    image: "/images/laughter.png",
+  },
+];
