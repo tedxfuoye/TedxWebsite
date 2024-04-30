@@ -40,7 +40,7 @@ const Speakers = () => {
         {...sliderSettings}
       >
         {speakersList.map((speaker) => (
-          <div className="relative rounded-xl max-w-[250px]overflow-hidden">
+          <div className="relative rounded-xl max-w-[250px] overflow-hidden">
             <Image
               src={speaker.image}
               width={250}
