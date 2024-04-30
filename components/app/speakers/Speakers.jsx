@@ -20,7 +20,7 @@ const Speakers = () => {
   };
 
   const sliderSettings = {
-    arrows: true,
+    arrows: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: false,
@@ -62,16 +62,16 @@ const Speakers = () => {
       {/* custom arrow / scroll button */}
       <div className="flex justify-center mt-10">
         <button
-          className="mx-2 flex items-center justify-center text-base my-5 border border-primary/60 rounded-md text-primary w-14 h-11 "
+          className="mx-2 flex items-center justify-center text-base my-5 border border-primary/60 rounded-md text-primary w-[60px] h-[44px] "
           onClick={previous}
         >
-          <MdChevronLeft className="text-[1.5rem]" />
+          <MdChevronLeft className="text-[20px]" />
         </button>
         <button
-          className="mx-2 flex items-center justify-center text-base my-5 border border-primary/60 rounded-md text-primary w-14 h-11 "
+          className="mx-2 flex items-center justify-center text-base my-5 border border-primary/60 rounded-md text-primary w-[60px] h-[44px] "
           onClick={next}
         >
-          <MdChevronRight className="text-[1.5rem]" />
+          <MdChevronRight className="text-[20px]" />
         </button>
       </div>
     </section>
