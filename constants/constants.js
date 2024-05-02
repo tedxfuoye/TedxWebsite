@@ -68,3 +68,40 @@ export const speakersList = [
     image: "/images/laughter.png",
   },
 ];
+
+export const footerLinks = [
+  {
+    category: "Quick links",
+    links: [
+      {
+        name: "about us",
+        link: "/about",
+      },
+      {
+        name: "sponsors",
+        link: "/sponsors",
+      },
+      {
+        name: "executive team",
+        link: "/executive-team",
+      },
+      {
+        name: "tickets",
+        link: "/tickets",
+      },
+      {
+        name: "articles",
+        link: "/articles",
+      },
+    ],
+  },
+  {
+    category: "Community",
+    links: [
+      {
+        name: "contact us",
+        link: "/contact",
+      },
+    ],
+  },
+];

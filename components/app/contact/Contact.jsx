@@ -2,19 +2,43 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <section className="px-40 py-20 max-w-screen-xl mx-auto">
+    <section className="px-10 md:px-40 py-20 max-w-screen-xl mx-auto">
       <h2 className="text-black font-bold font-kameron text-4xl mb-6">
         Contact Us
       </h2>
-      <div className="flex items-start gap-40 justify-between">
+      <div className="flex flex-col-reverse gap-20 md:flex-row items-start md:gap-40 justify-between">
         <div className="w-full md:w-1/2">
-          <h5>Get in touch</h5>
-          <p className="text-secondary font-medium text-[16px] text-justify md:max-w-[52rem]">
-            Have questions or suggestions? Reach out to us via the contact
-            form,and we'll be happy to connect.
-          </p>
-          <Link href={"tel:08160812613"}>08160812613</Link>
-          <Link href={"mailto:tedxfuoye@gmail.com"}>tedxfuoye@gmail.com</Link>
+          <div>
+            <h5 className="font-semibold text-black text-[16px] mb-5">
+              Get in touch
+            </h5>
+            <p className="text-secondary font-medium text-[12px] mb-5 text-justify md:max-w-2xl md:pr-5">
+              Have questions or suggestions? Reach out to us via the contact
+              form,and we'll be happy to connect.
+            </p>
+            <div className="flex items-center gap-5">
+              <Link href={"tel:08160812613"} className="text-[12px] font-bold">
+                08160812613
+              </Link>
+              <Link
+                href={"mailto:tedxfuoye@gmail.com"}
+                className="text-[12px] font-bold"
+              >
+                tedxfuoye@gmail.com
+              </Link>
+            </div>
+          </div>
+          <div className="mt-10">
+            <h5 className="font-semibold text-black text-[16px] mb-5">
+              Event Location
+            </h5>
+            <p className="text-secondary font-medium text-[12px] mb-5 text-justify md:max-w-[52rem]">
+              Find details about the event venue and how to get there.
+            </p>
+            <span className="text-[12px] font-bold">
+              P. M. B. 373, Km 3 Oye – Afao Road, Ekiti State, Nigeria.
+            </span>
+          </div>
         </div>
         <div className="w-full md:w-1/2 bg-white rounded-md p-8">
           <form action="">

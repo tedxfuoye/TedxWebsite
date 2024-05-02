@@ -28,7 +28,7 @@ const Speakers = () => {
   };
 
   return (
-    <section className="px-40 py-40">
+    <section className="px-10 md:px-40 py-40">
       <h2 className="text-black font-bold font-kameron text-4xl text-center mb-6">
         Meet our lineup of amazing speakers
       </h2>
@@ -39,8 +39,11 @@ const Speakers = () => {
         }}
         {...sliderSettings}
       >
-        {speakersList.map((speaker) => (
-          <div className="relative rounded-xl max-w-[250px] overflow-hidden">
+        {speakersList.map((speaker, index) => (
+          <div
+            className="relative rounded-xl max-w-[250px] overflow-hidden"
+            key={index}
+          >
             <Image
               src={speaker.image}
               width={250}
@@ -67,6 +70,7 @@ const Speakers = () => {
         >
           <MdChevronLeft className="text-[20px]" />
         </button>
+
         <button
           className="mx-2 flex items-center justify-center text-base my-5 border border-primary/60 rounded-md text-primary w-[60px] h-[44px] "
           onClick={next}

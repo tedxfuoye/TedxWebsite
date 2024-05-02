@@ -12,7 +12,7 @@ const Nav = () => {
 
   return (
     <nav className="bg-white">
-      <div className="h-[7rem] px-40 flex items-center justify-between">
+      <div className="h-[7rem] px-10 md:px-40 flex items-center justify-between">
         <Link href={"/"}>
           <Image
             src={"/images/tedxLogo.png"}
@@ -21,7 +21,7 @@ const Nav = () => {
             alt="TEDxFUOYE Logo"
           />
         </Link>
-        <div className="flex items-center gap-10 text-[1.4rem]">
+        <div className="hidden md:flex items-center gap-10 text-[1.4rem]">
           {navigationMenu.map((menu) => (
             <Link
               key={menu.name}

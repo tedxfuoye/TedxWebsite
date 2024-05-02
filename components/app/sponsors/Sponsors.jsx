@@ -20,7 +20,7 @@ const Sponsors = () => {
     <section className="px-40 py-20">
       <div className="w-full">
         <h2 className="text-black font-bold font-kameron text-4xl text-center mb-6">
-          Join us on this journey
+          Our sponsors
         </h2>
 
         {/* would come from the sponsorsList in the constants file */}
