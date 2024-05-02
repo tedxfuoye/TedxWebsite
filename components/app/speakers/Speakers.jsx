@@ -25,6 +25,14 @@ const Speakers = () => {
     slidesToScroll: 1,
     infinite: false,
     dots: false,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
