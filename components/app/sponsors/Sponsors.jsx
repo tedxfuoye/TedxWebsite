@@ -14,10 +14,18 @@ const Sponsors = () => {
     speed: 1000,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
   };
 
   return (
-    <section className="px-40 py-20">
+    <section className="px-10 md:px-40 py-20">
       <div className="w-full">
         <h2 className="text-black font-bold font-kameron text-4xl text-center mb-6">
           Our sponsors
