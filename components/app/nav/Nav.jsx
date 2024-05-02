@@ -49,7 +49,7 @@ const Nav = () => {
           </button>
 
           {/* mobile menu */}
-          <div className="">
+          <div className="md:hidden">
             {isMenuOpen ? (
               <IoMdClose onClick={toggleMenu} className="w-[30px] h-[30px]" />
             ) : (
