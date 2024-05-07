@@ -54,14 +54,14 @@ const Hero = () => {
 
         {/* simple steps section */}
         <div className="w-full">
-          <h2 className="text-black font-bold font-kameron text-4xl text-center md:text-left mb-6">
+          <h2 className="text-black font-bold font-kameron text-4xl text-left mb-6">
             Simple steps to get started
           </h2>
           <div className="px-5 md:px-10 py-14 gradient-background rounded-xl border border-primary/20">
             <div className="flex flex-col md:flex-row gap-14 items-center justify-between">
               {simpleSteps.map((i) => (
                 <div key={i.desc} className="md:max-w-[229px] w-full">
-                  <div className="image w-12 h-12 bg-primary p-2 rounded-full mx-auto md:mx-0">
+                  <div className="image w-12 h-12 bg-primary p-2 rounded-full ">
                     <Image
                       src={i.image}
                       width={100}
@@ -70,7 +70,7 @@ const Hero = () => {
                       className=""
                     />
                   </div>
-                  <p className="text-black mt-5 md:mt-2 font-medium text-[16px] text-center md:text-left">
+                  <p className="text-black mt-5 md:mt-2 font-medium text-[16px] text-left">
                     {i.desc}
                   </p>
                 </div>

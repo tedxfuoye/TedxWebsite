@@ -37,7 +37,7 @@ const Speakers = () => {
 
   return (
     <section className="px-10 md:px-40 py-40">
-      <h2 className="text-black font-bold font-kameron text-4xl text-center mb-6">
+      <h2 className="text-black font-bold font-kameron text-4xl text-left md:text-center mb-6">
         Meet our lineup of amazing speakers
       </h2>
 

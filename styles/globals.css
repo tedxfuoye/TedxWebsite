@@ -46,13 +46,34 @@ body {
 }
 
 label {
-  @apply block text-black text-[14px] font-semibold
+  @apply block text-black text-[14px] font-semibold;
 }
 
-input, textarea {
-  @apply block w-full mb-8 border h-[40px] rounded-md px-4 text-[14px] outline-none
+input,
+textarea {
+  @apply block w-full mb-8 border h-[40px] rounded-md px-4 text-[14px] outline-none;
 }
 
 textarea {
-  @apply h-[100px] resize-none
+  @apply h-[100px] resize-none;
+}
+
+.about_hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../public/images/about-hero.png");
+}
+
+.sponsors_hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../public/images/sponsorsPageHero.png");
+}
+
+.gallery_hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../public/images/galleryPageHero.png");
+}
+
+.teams_hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../public/images/executivePageHero.png");
 }
