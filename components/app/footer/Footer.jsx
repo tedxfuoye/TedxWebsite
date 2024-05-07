@@ -32,8 +32,8 @@ const Footer = () => {
                   {i.category}
                 </h6>
                 <ul>
-                  {i.links.map((links) => (
-                    <li>
+                  {i.links.map((links, index) => (
+                    <li key={index}>
                       <Link
                         href={links.link}
                         className="text-secondary hover:text-primary font-medium text-[14px] capitalize"
