@@ -20,14 +20,14 @@ const Footer = () => {
               Ideas Worth Spreading
             </h6>
             <p className="text-secondary font-medium text-[14px] text-justify">
-              Let's create a world where ideas know no bounds and where each
+              Let&#39;s create a world where ideas know no bounds and where each
               voice has the power to shape a brighter future.
             </p>
           </div>
 
           <div className="flex items-start md:gap-40 justify-between w-full md:w-fit">
-            {footerLinks.map((i) => (
-              <div>
+            {footerLinks.map((i, index) => (
+              <div key={index}>
                 <h6 className="text-[16px] text-primary font-bold mb-2">
                   {i.category}
                 </h6>

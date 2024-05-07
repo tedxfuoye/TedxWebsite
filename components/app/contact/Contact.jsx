@@ -14,7 +14,7 @@ const Contact = () => {
             </h5>
             <p className="text-secondary font-medium text-[12px] mb-5 text-justify md:max-w-2xl md:pr-5">
               Have questions or suggestions? Reach out to us via the contact
-              form,and we'll be happy to connect.
+              form,and we&#39;ll be happy to connect.
             </p>
             <div className="flex items-center gap-5">
               <Link href={"tel:08160812613"} className="text-[12px] font-bold">

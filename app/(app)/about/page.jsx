@@ -35,7 +35,7 @@ const About = () => {
             </div>
             <div className="w-full md:w-1/2 text-[15px] text-secondary">
               <p className="text-justify">
-                TED's open and free initiatives for spreading ideas include
+                TED&#39;s open and free initiatives for spreading ideas include
                 TED.com, where new TED Talk videos are posted daily; TEDx, which
                 licenses thousands of individuals and groups to host local,
                 self-organized TED-style events around the world; the TED

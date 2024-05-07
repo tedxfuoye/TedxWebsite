@@ -26,10 +26,10 @@ const ExecutiveTeam = () => {
               <p className="mb-10 hidden sm:block">
                 Collectively, we breathe life into ideas that transcend
                 limitations, pushing boundaries to shape a more vibrant city and
-                a better world. While this doesn't encompass everyone involved,
-                these individuals represent a core group making TEDxFUOYE a
-                tangible reality. Meet the faces behind the scenes, each
-                contributing their unique skills and perspectives to make
+                a better world. While this doesn&#39;t encompass everyone
+                involved, these individuals represent a core group making
+                TEDxFUOYE a tangible reality. Meet the faces behind the scenes,
+                each contributing their unique skills and perspectives to make
                 TEDxFUOYE an unforgettable experience.
               </p>
             </div>
